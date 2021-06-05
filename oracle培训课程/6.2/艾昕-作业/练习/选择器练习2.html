@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>选择器练习2</title>
+		<style type="text/css">
+			div p{   
+				color:red;
+			}
+			#father{
+				color:red;
+			}
+			p.box2{    
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="box1">
+			<p class="box2">
+				这行文字是什么颜色的？
+				<!-- 蓝色，因为div为继承属性，权重太小，所以只看p标签内类选择器box2，其优先级更高 -->
+			</p>
+		</div>
+	</body>
+</html>

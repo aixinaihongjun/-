@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink {
+            background-color: #e9dfea;
+        }
+        .green {
+            background-color: #e2fdfe;
+        }
+        .black {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            color: red;
+            font-family: 宋体;
+        }
+        fieldset {
+            border: none;
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="pink">
+        <legend><h1>照片选择</h1></legend>
+        选择照片<input type="file">
+    </fieldset>
+    <fieldset class="green">
+        <legend><h1>综合设置</h1></legend>
+        <p>选择尺寸：</p>
+        <input type="checkbox">5寸
+        <input type="checkbox">6寸
+        <p>选择相纸：</p>
+        <input type="radio" name="xiangzhi">富士
+        <input type="radio" name="xiangzhi">柯达 <br>
+        <p>
+            配送方式：
+            <select name="" id="">
+                <option value="">平邮</option>
+                <option value="">到付</option>
+            </select>
+        </p>
+        <p>
+            商品描述：
+            <input type="text">
+        </p>
+        <p>
+            意见反馈：
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+        </p>
+    </fieldset>
+    <input type="submit" name="" id="" class="black">
+    <input type="reset" name="" id="" class="black">
+</body>
+</html>

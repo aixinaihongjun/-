@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>选择器练习6</title>
+		<style type="text/css">
+			#father #son{ 
+				color:blue; 
+			}
+			#father p.box2{ 
+				color:black;
+			}
+			div.box1 p.box2{ 
+				color:red;
+			}
+			#father{
+				color:green !important;
+			}
+			div#father.box1 {
+				color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father" class="box1">
+			这不是内容吗？
+			<!-- 绿色，第一个权重200，第二个权重111，第三个22，第四个无穷大，第五个111 -->
+			<p id="son" class="box2">
+				这行文字是什么颜色的？
+				<!-- 蓝色，不看div继承，因其权重太低，看p标签中id选择器son优先级更高，所以看第一个 -->
+			</p>
+		</div>
+	</body>
+</html>

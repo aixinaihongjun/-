@@ -1,0 +1,27 @@
+盒子模型 html万物皆盒子 利用css设置好盒子样式 然后摆放到相应位置 往盒子里面装内容
+边框border 外边距margin 内边距padding 内容width/height
+border/margin/padding-top/right/bottom/left
+border-style: solid 实线
+border-style: dashed 虚线
+border-style: dotted 点线
+border-collapse: collapse 合并 相邻的边框合并在一起
+边框会增加盒子的实际大小
+内边距padding 内容和边框之间的距离
+盒子本身没有宽高，padding不会撑开盒子大小
+外边距margin 控制盒子与盒子之间的距离
+外边距可以让盒子水平居中
+标准流盒子上下都有外边距，取最大值
+定位流 浮动流
+overflow: hidden 多余部分隐藏
+margin一般是控制兄弟之间的距离，不是控制父子之间的距离
+父子之间的距离一般用padding
+定义垂直外边距时，外边距的合并，取最大值。解决方案：只给一个盒子外边距
+margin塌陷问题 解决方案 解决方案：1加边框 2内边距 3overflow: hidden;
+外边距可以让盒子水平居中
+清除内外边距
+* {
+    margin: 0;
+    padding: 0;
+}
+注意：行内元素为了照顾兼容性，尽量只设置左右内外边距，不设置上下
+但是转成块级或行内块就可以了

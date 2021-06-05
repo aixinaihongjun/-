@@ -1,0 +1,22 @@
+复合选择器：后代选择器 子选择器 并集选择器 伪类选择器
+(重要 多)后代选择器 语法：元素1 元素2 {样式声明} 元素1是父级 元素2是子集 元素2不一定是儿子 是后代就可以
+(重要 少)子选择器 只能选择最近的一级子元素 （只能选亲生儿子） 语法 .nav>a
+(重要 多)并集选择器 元素1，元素2 {样式声明} 用于集体声明
+(多)伪类选择器 给选择器加一些特殊效果 语法 :hover
+a:link a:visited a:hover a:active
+(少):focus选择器 input:focus
+css显示模式 分类:块级 行级 行内块
+块级 h1-h6 p div 独占一行 高度宽度内外边距都可控制 宽度默认容器(父级宽度)100%
+不要用p标签来放div
+行级 a strong span 宽高直接设置无效 默认宽度是内容宽度 行内元素只能容纳文本或其他行内元素
+行内块 img input td 具有行内和块的共同特点
+相邻行内块元素之间有空隙 会在同一行上 一行会显示多个 默认宽度就是内容宽度 高度 行高 内边距 外边距都能控制
+显示模式转换 display:block inline inline-block
+background背景属性
+background-color背景颜色
+background-image背景图片 url()写图片地址 默认平铺在整个页面 背景图片会压住背景颜色
+background-repeat背景平铺 no-repeat
+background-position背景图片位置 省略的参数默认居中对齐
+background-attachment: fixed背景图片固定 scroll背景图片滚动
+background: 背景颜色 背景图片地址 背景平铺 背景图片滚动 背景图片位置
+工作中用 background: url(../6.2/微信图片_20210602105546.jpg) no-repeat;
